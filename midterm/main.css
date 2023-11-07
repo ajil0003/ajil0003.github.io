@@ -1,19 +1,23 @@
-/* I chose font family and background color for the whole page */
 body {
-  font-family:Arial, Helvetica, sans-serif;  
-  background-color:#aad4cf;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #aad4cf;
 
 }
+
 /* I wanted to make all the headers with a same font size */
-h1,h2,h3{
+h1,
+h2,
+h3 {
     font-size: 25px;
 }
+
 /* adjustment for the big picture starts */
-#topside-pic{
+#topside-pic {
     width: 100%;
     height: 100%;
-    
+
 }
+
 /* it's a background behind my content */
 .second-background {
     background-color: #c4dad7;
@@ -21,29 +25,33 @@ h1,h2,h3{
     margin: 0 auto;
     padding: 8px;
 }
+
 /* The menu adjustments Starts */
 nav ul li {
     display: inline-block;
-    width: 33%; 
+    width: 33%;
     padding: 0.5em;
     box-sizing: border-box;
     text-transform: uppercase;
-    text-align:center;
+    text-align: center;
     border-right: 1px solid black;
     margin: -20px 0 0 -15px;
     list-style: none;
- 
+
 }
-nav ul a{
+
+nav ul a {
     text-decoration: none;
     display: block;
     color: black;
     font-size: 1.4em;
 }
+
 /* I wanted to hide a line for the last item of my menu */
-nav ul li:last-child{
+nav ul li:last-child {
     border-right: none;
 }
+
 /* adjustment for the small picture starts */
 #leftside-pic {
     width: 170px;
@@ -51,10 +59,12 @@ nav ul li:last-child{
     float: left;
     padding-right: 15px;
 }
+
 /* I chose relative position for parents and absolute position for child*/
-header{
+header {
     position: relative;
 }
+
 header h1 {
     color: white;
     position: absolute;
@@ -63,52 +73,61 @@ header h1 {
     font-weight: 300;
     font-size: 55px;
 }
+
 /* adjustment for the form starts */
-form{
+form {
     border: 1px solid black;
     padding: 10px;
     height: 450px;
 }
-.myinputs input{
+
+.myinputs input {
     width: 96%;
     margin: 15px;
-    padding:8px;
+    padding: 8px;
     margin-top: 8px;
 
 }
-.myinputs label{
+
+.myinputs label {
     margin-left: 15px;
     margin-top: 25px;
 }
-.large-area label{
+
+.large-area label {
     margin-left: 15px;
 }
-.large-area textarea{
+
+.large-area textarea {
     height: 90px;
     width: 97.5%;
     margin: 15px;
     margin-top: 8px;
- 
+
 }
-.form-part2{
+
+.form-part2 {
     margin: 15px;
 }
+
 /* I wanted to make the last question bigger */
-.large-last-qs{
+.large-last-qs {
     font-size: 20px;
 }
+
 /* adjustment for the button */
-button{
+button {
     background-color: transparent;
     padding: 10px;
     margin-left: 15px;
     text-transform: uppercase;
     border: 1px solid black;
-    
+
 }
+
 /* adjustment for the form ends */
 /* adjustment for the footer */
-footer{
+footer {
     text-align: right;
     margin-top: 28px;
     margin-right: 30px;
