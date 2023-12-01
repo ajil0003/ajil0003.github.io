@@ -287,7 +287,7 @@ Media Query 800px
         column-gap: 1em;
 
     }
-
+ 
     .news .right img {
         grid-row: 1 / 3;
     }
