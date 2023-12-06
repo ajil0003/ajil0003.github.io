@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color: #222222;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    border:1px solid red;
+
+}
+.menu-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.menu-container ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.menu-container ul li{
+    padding: 1rem;
+}
+
+
+.menu-container ul li:nth-child(1){
+    background-color: #c78b06;
+    color: #222222;
+}
+.menu-container ul li:nth-child(1) a{
+    color: #222222;
+}
+.menu-container ul li a{
+    text-decoration: none;
+    color: #c78b06;
+    font-size: 1.2rem;
+}
+
+.menu-container form{
+    display: flex;
+    height: 35px;
+    align-items: center;
+    border: 1px solid #c78b06;
+}
+.menu-container input{
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    height: 100%;
+}
+.menu-container i{
+    width: 35px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c78b06;
+    font-size: x-large;
+}
+.banner p,h1 {
+    color: white;
+}
+.banner {
+    background-image: url(../images/main-banner.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner img {
+    width: 100%;
+}
+
+/* .container {
+
+    margin: 0 auto;
+    padding: 5px;
+    max-width: 1200px;
+   
+}
+.fa {
+    color: #c78b06;
+    border: 1px solid #c78b06;
+    padding: 3px;
+}
+.search-container {
+
+}
+
+nav li {
+    text-align: center;
+    padding: 2rem 0;
+    list-style: none;
+    display: inline-block;
+    margin: 5px 40px;
+
+}
+a {
+    text-decoration: none;
+}
+nav {
+    width: 100%;
+}
+nav li:hover {
+background-color: #c78b06;
+
+}
+
+header{
+    background-color: #222;
+    width:100%;
+}
+body {
+    font-family:"open-sans" ;
+}
+.banner p,h1 {
+    color: white;
+}
+.banner {
+    background-image: url(../images/main-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.banner img {
+    width: 100%;
+}
+.vision {
+    background-image: url(../images/vision.jpg);
+}
+.vision img {
+    width: 100%;
+} */
