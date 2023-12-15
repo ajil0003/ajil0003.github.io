@@ -1,13 +1,15 @@
+/* Reset some default styles for all elements */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
+/* Header styles */
 header{
     background-color: #222222;
 }
+/* Wrapper for the main content with a maximum width of 1200px and centered */
 .wrapper{
     width: 100%;
     height: 100%;
@@ -15,6 +17,7 @@ header{
     margin: 0 auto;
 
 }
+/* Container for the main menu */
 .menu-container{
     display: flex;
     justify-content: space-between;
@@ -22,6 +25,7 @@ header{
     width: 100%;
     column-gap: 40px;
 }
+/* Navigation styles */
 nav{
     flex-grow: 1;
 }
@@ -37,7 +41,7 @@ nav{
     text-align: center;
 }
 
-
+/* Styling for the first menu item */
 .menu-container ul li:nth-child(1){
     background-color: #c78b06;
     color: #222222;
@@ -50,10 +54,9 @@ nav{
     color: #c78b06;
     font-size: 1.2rem;
 }
-
+/* Styling for the search form in the menu */
 .menu-container form{
     display: flex;
-
     align-items: center;
 
 }
@@ -73,6 +76,7 @@ nav{
     font-size: x-large;
         border: 1px solid #c78b06;
 }
+/* Banner styles */
 .banner p, .banner h1 {
     color: white;
 }
@@ -90,7 +94,7 @@ nav{
 .banner img {
     width: 100%;
 }
-
+/* Gray layout styles */
 .gray-layout{
     background-color: #00000090;
     height: 100%;
@@ -115,7 +119,7 @@ nav{
     font-size: 1.2rem;
 }
 
-
+/* Dual view styles */
 .dual-view{
     display: flex;
     align-items: stretch;
@@ -134,9 +138,11 @@ nav{
     width: 100%;
 
 }
+/* About section styles */
 .about{
     background-color: #F9E3B2;
 }
+/* Services container styles */
 .services-container{
     display: grid;
     grid-template-areas:
@@ -144,6 +150,7 @@ nav{
     "g3 g3 g4 g4 g5 g5";
     gap: 10px;
 }
+/* Service styles */
 .service{
     background-color: #F9E3B2;
     display: flex;
@@ -152,6 +159,7 @@ nav{
 .service .info{
     padding: 10px;
 }
+/* Styling for individual services using grid areas */
 .service:nth-child(1){
     grid-area: g1;
 }
@@ -171,13 +179,16 @@ nav{
 .service img{
     width: 100%;
 }
+/* Vision section styles */
 .vision{
     background-image: url(../images/vision.jpg);
     background-size: cover;
 }
+/* Button styles within service section */
 .service button{
     width: 100%;
 }
+/* Vision container styles */
 .vision-container{
     color: #FFFFFF;
     display: flex;
@@ -188,10 +199,12 @@ nav{
     padding: 20px;
 
 }
+/* Styling for links within the vision container */
 .vision-container a{
     color: #FFFFFF;
     text-decoration: none;
 }
+/* Team section styles */
 .team .dual-view{
     background-color: #F9E3B2;
 }
@@ -204,10 +217,12 @@ nav{
     flex-direction: column;
     row-gap: 10px;
 }
+/* Reversing order of the third item in dual view for the team section */
 .team .dual-view:nth-child(3){
     flex-direction: row-reverse;
 
 }
+/* Contact grid styles */
 .contact-grid{
     width: 100%;
     display: grid;
@@ -232,22 +247,25 @@ nav{
     flex-direction: column;
 min-height: 300px;
 }
+/* Styling for iframes in the contact section */
 iframe{
     width: 100%;
 
 }
+/* Footer styles */
 footer{
     background-color: #222222;
     color:#c78b06 ;
     padding: 20px;
     
 }
+/* Styling for links within the footer */
 footer a{
     color: #c78b06;
     text-decoration: none;
 
 }
-
+/* Generic button styles */
 button{
     border: none;
     outline: none;
@@ -261,35 +279,40 @@ button{
     font-size: 1rem;
     column-gap: 10px;
 }
+/* Additional button styles for the vision container */
 .vision-container button{
     width: 150px;
 }
-
+/* Input and textarea container styles */
 .myinputs, .large-area{
    display: flex;
     flex-direction: column;
-
     width: 100%;
 }
+/* Input styles within the myinputs class */
 .myinputs input{
     height: 35px;
     
 }
+/* Textarea styles within the myinputs class */
 .myinputs textarea{
     width: 100%;
   
 }
+/* Styling for iframes within the contact section */
 .contact iframe{
     display: flex;
     width: 100%;
 
 }
+/* Styling for forms within the contact section */
 .contact form{
     display: flex;
     flex-direction: column;
     row-gap: 10px;
     width: 100%;
 }
+/* Styling for buttons within forms in the contact section */
 .contact form button{
     display: flex;
     width: fit-content;
@@ -299,19 +322,42 @@ button{
 section{
     padding: 10px;
 }
+/* Styling for tables */
 table{
     width: 100%;
     border-collapse: collapse;
+    border: 1px #222 solid;
 }
-
-
+/* Styling for table cells */
+th,td {
+    text-align: left;
+    padding: 8px;
+}
+/* Styling for table header cells */
+th {
+    background-color: #ffe6ac;
+    align-items: center;
+   
+}
+th:nth-child(1),th:nth-child(2){
+    text-align: center;
+    
+}
+/* Styling for nth child cells in tables */
+table th:nth-child(n),
+table td:nth-child(n) {
+    border: 1px solid #000;
+}
+/* Media query for screens with a max width of 760px */
 @media  screen and (max-width: 760px){
     .menu-container{
         flex-direction: column;
     }
+        /* Making navigation take 100% width on smaller screens */
     nav{
         width: 100%;
     }
+    /* Adjusting styles for menu items in smaller screens */
     .menu-container ul{
         margin: 0;
         padding: 0;
@@ -319,23 +365,29 @@ table{
         align-items: center;
         text-align: center;
     }
+        /* Adjusting width for menu items in smaller screens */
     .menu-container ul li{
 
         width: 100%;
     }
+    /* Styling for the first menu item in smaller screens */
     .menu-container ul li:nth-child(1){
         background-color: #c78b06;
     }
+      /* Adjusting styles for the form in smaller screens */
     .menu-container form{
         width: 100%;
     }
+      /* Adjusting width for input fields in smaller screens */
     .menu-container input{
         width: 100%;
     }
+       /* Adjusting width for icon in smaller screens */
     .menu-container i{
         width: 10%;
         height: 35px;
     }
+     /* Styling for the logo container in smaller screens */
     .logo-container{
         display: flex;
  
@@ -343,6 +395,7 @@ table{
         padding: 10px 0;
         width: 100%;background-color: #c78b06;
     }
+        /* Adjusting styles for the form in smaller screens */
     .menu-container form{
       
         padding: 10px;
@@ -351,6 +404,7 @@ table{
     .menu-container form input{
     height: 35px;
     }
+     /* Adjusting height for the banner in smaller screens */
     .banner{
         min-height: 300px;
     }
@@ -368,6 +422,7 @@ table{
     .view{
         width: 100%;
     }
+     /* Adjusting grid areas for services container in smaller screens */
     .services-container{
         grid-template-areas:
         "g1"
@@ -376,12 +431,14 @@ table{
         "g4"
         "g5";
     }
+     /* Adjusting min height for the vision container in smaller screens */
     .vision-container{
         min-height: 300px;
     }
     .team .dual-view{
         flex-direction: column;
     }
+       /* Adjusting grid areas for contact grid in smaller screens */
     .contact-grid{
         grid-template-columns: repeat(1,1fr);
         grid-template-areas:
@@ -389,6 +446,7 @@ table{
         "g3"
         "g2";
     }
+        /* Adjusting min height for grid items in smaller screens */
     .grid{
         min-height: 200px;
     }
